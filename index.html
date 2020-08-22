@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Beebop</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <section class="hero is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-flex">
+            <div class="column-child terminal shadow">
+              <div class="terminal-bar dark-mode">
+                <div class="icon-btn close"></div>
+                <div class="icon-btn min"></div>
+                <div class="icon-btn max"></div>
+                <div class="terminal-bar-text is-hidden-mobile dark-mode-text">guest@Beebop: ~</div>
+              </div>
+              <div class="terminal-window primary-bg" onclick="document.getElementById('dummyKeeyboard').focus();">
+                <div class="terminal-output" id="terminalOutput">
+                  <div class="terminal-line">
+                    <span class="help-msg">
+                      <pre>
+██████╗ ███████╗███████╗██████╗  ██████╗ ██████╗ 
+██╔══██╗██╔════╝██╔════╝██╔══██╗██╔═══██╗██╔══██╗
+██████╔╝█████╗  █████╗  ██████╔╝██║   ██║██████╔╝
+██╔══██╗██╔══╝  ██╔══╝  ██╔══██╗██║   ██║██╔═══╝ 
+██████╔╝███████╗███████╗██████╔╝╚██████╔╝██║     
+╚═════╝ ╚══════╝╚══════╝╚═════╝  ╚═════╝ ╚═╝     
+                      </pre>
+                      
+                      <br>Welcome to the Beebop presentation page — Type <span class="code">help</span>
+                      for a list of supported commands.</span>
+                  </div>
+                </div>
+                <div class="terminal-line">
+                  <span class="succeess">➜</span> <span class="diirectory">~</span> <span class="user-iinput"
+                    id="userIInput"></span>
+                  <input type="text" id="dummyKeeyboard" class="dummy-keyboard">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- partial -->
+    <script src='https://use.fontawesome.com/releases/v5.3.1/js/all.js'></script>
+    <script src='./main.js'></script>
+  
+    <style src='./style.css'></style>
+</body>
+</html>
